@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accounting</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <div class="nav-logo">ACC</div>
+            </a> 
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onClick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="blogs.html">BLOGS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onClick="showMenu()"></i>
+        </nav>
+        <h1>BLOGS</h1>
+    </section>
+
+    <!----------------BLOGS------------->
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/blog-2.jpg">
+                <h2>Accounting Tips 101-2020</h2>
+                <p>The thought of learning and understanding a bunch of seemingly complicated accounting concepts can strike fear into the hearts of small business owners.
+                
+                    However, if you take a little time to familiarize yourself with the basics of accounting, you’ll likely find it’s not as difficult as you may have imagined. We’re here to show you some important accounting basics every small business owner should know and understand.</p>
+                <p>Regardless of who manages your business accounting, it's wise to understand accounting basics. If you can read and prepare these basic documents, you'll understand your business’s performance and financial health — as a result, you'll have greater control of your company and financial decisions.
+
+                    Here are the documents and calculations we recommend mastering, even if you work with a professional, consulting agency, or have hired a certified public accountant (CPA). They provide valuable snapshots and measures of your business performance. Marilyn points out that an income statement will show how profitable Direct Delivery has been during the time interval shown in the statement's heading. This period of time might be a week, a month, three months, five weeks, or a year—Joe can choose whatever time period he deems most useful.
+
+                    The reporting of profitability involves two things: the amount that was earned (revenues) and the expenses necessary to earn the revenues. As you will see next, the term revenues is not the same as receipts, and the term expenses involves more than just writing a check to pay a bill.</p>
+                <p>Accounting is a complex discipline. But if you’re not an accountant yourself, you don’t need to know everything about accounting — only the practices and parts that have to do with your financial operations, legal obligations, and business decisions.Whether you’ve just launched your business or are a startup veteran, the following section is important. These eight steps will introduce you to the accounting process (if you’re not yet familiar) and set you up to scale your business in a sustainable way.
+
+                    Note: This is simply an overview of the discipline of accounting. We recommend conducting more research and potentially hiring a professional accountant (which we'll talk about below) to ensure you don’t miss any financial or legal obligations.</p>
+                    <div class="comment-box">
+                        
+                        <h3>Leave a comment</h3>
+        
+                        <form class="comment-form" action="https://formspree.io/f/mnqlzarp" method="POST" id="my-form">
+                            <input type="text" name="name" placeholder="Enter Name">
+                            <input type="email" name="email" placeholder="Enter Email">
+                            <textarea rows="5" name="comment" placeholder="Your comment"></textarea>
+                            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                        </form>
+                    </div>
+                    <div id="status"></div>
+                    
+            </div>
+        </div>
+    </section>
+    
+
+    <!------------Footer-------------------->
+    
+    <section class="footer">        
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p> © Copyright 2021 ACC. All Rights Reserved.</p>
+    </section>
+
+
+    <!-------Javascript for toggle menu------>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <script src="./index.js"></script>
+</body>
+</html>
